@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="text-center gap-20 max-w-sm mx-auto bg-ligth-gray">
+    <div className="text-center gap-20 max-w-sm mx-auto bg-blue-500/75">
       <h1 className="text-6xl">Programmering</h1>
       <div className="text-3xl">
         <p>
