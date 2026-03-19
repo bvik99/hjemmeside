@@ -2,6 +2,16 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <><h1>Overskrift</h1><p>Tekst</p></>
+    <div>
+      <h1>Programmering</h1>
+      <p>Ulike temaer som er aktuelle å lære om:</p>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
   );
 }
