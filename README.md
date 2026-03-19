@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# How to sideprosjekt
 
-## Getting Started
+Velkommen til "How to sideprosjekt"!
 
-First, run the development server:
+Dette repoet tilhører en workshop/arrangement som handler om å lage sitt eget sideprosjekt. Du behøver ikke å ha deltatt for å bruke dette git-repoet.
+
+- [How to sideprosjekt](#how-to-sideprosjekt)
+  - [Forutsetninger](#forutsetninger)
+  - [Hvordan starte?](#hvordan-starte)
+  - [Nyttige lenker](#nyttige-lenker)
+  - [Oppgaver](#oppgaver)
+
+## Forutsetninger
+
+### NPM
+
+Vi forventer at du har `node` og `npm` installert. For å laste ned til ditt operativsystem sjekk innstruksene her:
+
+- **På Mac**: `node` og `npm` kan enkelt installeres ved å bruke [Homebrew](https://brew.sh). Åpne terminalen og kjør kommandoen `brew install node`. Om du ikke Homebrew, kan du laste ned `node` fra [Node.js sin offisielle nettside](https://nodejs.org/en/download).
+- **Windows-brukere**: Besøk [Node.js sin offisielle nettside](https://nodejs.org/en/download) og last ned den relevante installasjonsfilen for ditt system.
+- **Linux-brukere**: Sjekk ut pakkehåndteringssystemet som følger med din distro for å installere `node` og `npm`.
+
+### GitHub
+
+Lag en konto på [Github](https://github.com)
+
+## Hvordan starte?
+
+Naviger til den mappen du ønsker å ha prosjektet ditt i med `cd` kommandoen i terminalen. I den riktige mappen gjør følgende:
+
+1. Lag et nytt Next.js-prosjekt ved å kjøre `npx create-next-app@latest` i terminalen eller fork dette prosjektet på GitHub og clone repoet.
+
+```bash
+npx create-next-app@latest
+```
+
+2. Velg `recomended nextjs defaults` og trykk `enter`. Dette laster ned TypeScript som språk, ESLint, Tailwind CSS, og velger "App Router".
+
+3. Når prosjektet er ferdig installert, må du først navigere til prosjektmappen, og deretter installere avhengigheter.
+
+```bash
+cd <prosjektnavn>
+npm install
+```
+
+4. Start prosjektet ved å kjøre `npm run dev`.
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Dette vil starte en lokal server på `http://localhost:3000`. Når du endrer filer, vil nettsiden automatisk oppdatere seg selv.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Nyttige lenker
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js sin dokumentasjon](https://nextjs.org/docs)
+- [React sin dokumentasjon](https://react.dev)
+- [Tailwind CSS sin dokumentasjon](https://tailwindcss.com/docs)
+- [Claude](https://claude.ai) 
 
-## Learn More
+Om du bruker VSCode anbefaler vi å laste ned [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) for autocomplete av css klasser.
 
-To learn more about Next.js, take a look at the following resources:
+## Oppgaver
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+_(Valgfritt! Gjerne lag noe eget.):_
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Vi har laget noen oppgaver for deg som du kan prøve å løse. Disse oppgavene kommer til å ta deg gjennom grunnleggende React og Next.js. Målet kommer til å være å lage en enkel portefølje-side for å vise frem prosjektene dine.
 
-## Deploy on Vercel
+Det kommer til å være noen eksempler til kode på hvordan du kan "løse" oppgavene, men de er ikke nødvendigvis en fasit. Om du har lyst til å gjøre noe annerledes, er det bare å kjøre på! Oppgavene er laget for å gi deg en pekepinn på hva du kan gjøre.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Før du starter på oppgavene anbefaler vi å forke dette repoet til din egen GitHub-konto. Om du gjør det kan du også følge [how-to-deploy](./oppgaver/how-to-deploy.md) for å lære hvordan du kan deploye prosjektet ditt til Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. [Oppgave 1](./oppgaver/oppgave-1.md) lage forsiden
+2. [Oppgave 2](./oppgaver/oppgave-2.md) komponenter 
+3. [Oppgave 3](./oppgaver/oppgave-3.md) lage en underside for prosjekter
+4. [Oppgave 4](./oppgaver/oppgave-4.md) navigasjon og Link komponentetn
