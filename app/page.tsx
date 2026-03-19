@@ -3,7 +3,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="text-center">
-      <h1 className="text-6xl">\nProgrammering\n</h1>
+      <br />
+      <h1 className="text-6xl">Programmering</h1>
+      <br />
+      <br />
       <p>Ulike temaer som er aktuelle å lære om:</p>
       <ul className="text-3xl">
         <li>Python</li>
